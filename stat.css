@@ -1,0 +1,163 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    font-size: 18px;
+
+}
+.statistique {
+    color: white;
+    padding: 10px;
+    
+}
+
+/* Conteneur principal de saisie */
+#valeurs {
+    background:  #3333;
+    border: solid white 1px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#valeurs p:first-child {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Conteneurs des champs */
+.valeursx, .valeursy {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+#valeurs label {
+    text-align: center;
+    display: block;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Champs input */
+#valeurs input[type="text"] {
+    width: 100%;
+    height: 0.75cm;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+#valeurs input[type="text"]:focus {
+    outline: none;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f0f0f0;
+}
+
+/* Boutons */
+#valeurs input[type="button"] {
+    width: 48%;
+    padding: 12px;
+    margin: 10px 1% 0 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+#valeurs input[type="button"]:active {
+    box-shadow: 0 1px #4CAF50;
+    transform: translateY(3px);
+}
+#envoyer {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#envoyer:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.3);
+}
+
+#modifier {
+    background-color: #ff9800;
+    color: white;
+}
+
+#modifier:hover {
+    background-color: #e68900;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 152, 0, 0.3);
+}
+
+/* Conteneur de résultats */
+.resolution {
+    background: #3333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.bord.active {
+    border: solid white 1px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.commentaire.active {
+    border: solid green 2px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nb p {
+    color: red;
+    font-size: 18px;
+    
+}
+
+footer {
+    background-color: #3333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: flex;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #valeurs {
+        padding: 20px;
+    }
+    
+    #envoyer, #modifier {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
